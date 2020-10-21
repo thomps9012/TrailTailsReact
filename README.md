@@ -1,68 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TrailTails
 
-## Available Scripts
+A user-based Node Express app designed to help users find local hiking trails. Explore the most popular trails near you and locate the ones that allow Dogs! Get driving directions, current trail conditions and check weather conditions.
 
-In the project directory, you can run:
+![Alt text](./public/assets/images/TrailTailsLandingPage.png?raw=true "TrailTails Landing Page")
 
-### `npm start`
+**Deployed Application:** (http://trailtails.herokuapp.com/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please ensure all of the following prerequisites are installed on your local development machine:
 
-### `npm run build`
+* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* MySQL - [Download & Install MySQL](https://dev.mysql.com/downloads/installer/), and make sure it's running on the default port (27017).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Download
 
-### `npm run eject`
+There are several ways you can get the code:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Cloning The GitHub Repository
+The recommended way to get the TrailTails code is to use git to directly clone the TrailTails repository:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ git clone https://github.com/thomps9012/TrailTails.git TrailTails
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This will clone the latest version of the [PROJECT NAME] repository to a **TrailTails** folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Downloading The Repository Zip File
+Another way to use the TrailTails code is to download a zip copy from the [master branch on GitHub](https://github.com/thomps9012/TrailTails/archive/master.zip). You can also do this using the `wget` command:
 
-## Learn More
+```bash
+$ wget https://github.com/thomps9012/TrailTails/archive/master.zip -O trailtails.zip; unzip trailtails.zip; rm trailtails.zip
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Don't forget to rename after your project name.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install
 
-### Code Splitting
+Once you've downloaded and installed prerequisites, you're ready to begin install process. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The project comes pre-bundled with a `package.json`file that contains the list of modules you'll need to run the application.
 
-### Analyzing the Bundle Size
+To install dependencies, run this in the application folder from the command-line:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```bash
+$ npm install
+```
+This command does a few things:
+* First it will install the dependencies needed for the application to run.
+* If you're running in a development environment, it will then also install development dependencies needed for testing and running your application.
+* To update these packages later on, just run `npm update`
 
-### Making a Progressive Web App
+## Running The Application
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Run the application using npm:
 
-### Advanced Configuration
+```bash
+$ npm start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+The application should run on port 8080 with the *development* environment configuration, so in your browser just go to [http://localhost:8080](http://localhost:8080)
 
-### Deployment
+## Running the tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```bash
+$ npm test
+```
 
-### `npm run build` fails to minify
+## Built With
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* [NodeJs](https://nodejs.org/en/docs/) - The Server-Side Library Used
+* [Express](https://expressjs.com/) - Server technology
+* [Passport](http://www.passportjs.org/) - Secure User Authentication
+* [Sequelize](https://sequelize.org/) - MySQL ORM
+
+## Team
+
+* **Andrew Murphy**
+* **Samuel Thompson**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
